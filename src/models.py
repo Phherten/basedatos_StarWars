@@ -8,6 +8,9 @@ from eralchemy import render_er
 
 Base = declarative_base()
 
+
+
+"""
 class Person(Base):
     __tablename__ = 'person'
     # Here we define columns for the table person
@@ -28,6 +31,6 @@ class Address(Base):
 
     def to_dict(self):
         return {}
-
+"""
 ## Draw from SQLAlchemy base
 render_er(Base, 'diagram.png')
