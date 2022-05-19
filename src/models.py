@@ -41,7 +41,7 @@ class Planeta(Base):
 
 
 class Planeta_favorito(Base):
-    __tablename__="planeta_favorito"
+    __tablename__= "planeta_favorito"
     id = Column(Integer, primary_key=True)
     id_user = Column(Integer,ForeignKey('user.id'))
     user = relationship(User)
@@ -50,7 +50,7 @@ class Planeta_favorito(Base):
 
 
 class Nave(Base):
-    __tablename__:"nave"
+    __tablename__= "nave"
     id = Column(Integer, primary_key=True)
     name = Column(String(250), nullable=False)
     tamaño = Column(Integer, nullable=False)
